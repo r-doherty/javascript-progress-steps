@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 :root {
-	--line-border-fill: #3898db;
+	--line-border-fill: #000000;
 	--line-border-empty: #e0e0e0;
 }
 
@@ -10,7 +10,11 @@
 }
 
 body {
-	background-color:#f6f7fb;
+	background: hsla(217, 100%, 50%, 1);
+	background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
 	font-family: "Muli", "sans-serif";
 	display: flex;
 	align-items: center;
@@ -22,6 +26,7 @@ body {
 
 .container {
 	text-align: center;
+	font-weight: bold;
 }
 
 .progress-container {
@@ -53,13 +58,14 @@ body {
 	transform: translateY(-50%);
 	height: 4px;
 	width: 0%;
+	max-width: 98%;
 	z-index: -1;
 	transition: .4s ease;
 }
 
 .circle {
 	background-color: #fff;
-	color: #999;
+	color: #000;
 	border-radius: 50%;
 	height: 30px;
 	width: 30px;
@@ -83,7 +89,8 @@ body {
 	font-family: inherit;
 	padding: 8px 30px;
 	margin: 5px;
-	font-size: .8rem;
+	font-size: 1rem;
+	font-style: italic;
 }
 
 .btn:active {
